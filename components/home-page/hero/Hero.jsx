@@ -19,7 +19,7 @@ export const Hero = () => {
       </div>
       <h2 className={styles.heading}>Hi, I'm Mohammad</h2>
       <p className={styles.paragraph + " " + font1.className}>
-        This blog is an experimental blog to learn Next.js features!
+        I made this experimental blog to learn Next.js features!
       </p>
     </section>
   );
