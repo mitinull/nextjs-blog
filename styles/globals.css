@@ -12,7 +12,9 @@
   --background0: #2a0b3d;
   --background1: #44318d;
 
-  --select-color: #d83f87;
+  --selection-color: #d83f87;
+
+  --margin1: 1rem;
 }
 
 * {
@@ -32,6 +34,6 @@ a {
 }
 
 ::selection {
-  background-color: var(--select-color);
+  background-color: var(--selection-color);
   color: var(--foreground1);
 }

@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  max-width: var(--max-width);
+  padding: var(--margin1);
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+@media (hover: hover) {
+  .logo:hover {
+    color: var(--selection-color);
+  }
+}
+
+.items {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+@media (hover: hover) {
+  .items li:hover {
+    color: var(--selection-color);
+  }
+}
