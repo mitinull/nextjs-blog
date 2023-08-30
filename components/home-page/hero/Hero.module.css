@@ -1,0 +1,41 @@
+.container {
+  padding: 3.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  align-items: center;
+  background: var(--background1);
+  text-align: center;
+  border-radius: 1em;
+  margin: 1em;
+  box-shadow: 3px 3px 5px 0px #0006;
+}
+
+.image {
+  border-radius: 20%;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin-bottom: 1em;
+  outline: solid 2px var(--foreground1);
+}
+
+.heading {
+  font-size: 2.2em;
+}
+
+.paragraph {
+  font-size: 1.3em;
+  color: var(--foreground2);
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    font-size: 0.8em;
+  }
+  .image {
+    width: 170px;
+    height: 170px;
+  }
+}
