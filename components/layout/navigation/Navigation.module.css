@@ -1,9 +1,13 @@
 .header {
+  background: var(--background1);
+}
+
+.container {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   max-width: var(--max-width);
-  padding: 1.3rem var(--margin1) 1.5rem var(--margin1);
+  padding: 2rem var(--margin1);
   margin: 0 auto;
 }
 

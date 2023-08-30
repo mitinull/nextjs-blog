@@ -16,7 +16,7 @@ const posts = [
 
 export const FeaturedPosts = () => {
   return (
-    <section>
+    <section className={styles.section}>
       <h2 className={font0.className+" "+styles.heading}>Featured Posts</h2>
       <PostsGrid posts={posts} />
     </section>

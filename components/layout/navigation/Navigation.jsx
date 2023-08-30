@@ -9,19 +9,21 @@ const font1 = Inter({ subsets: ["latin"] });
 export const Navigation = () => {
   return (
     <header className={styles.header}>
-      <Link href="/" className={font0.className + " " + styles.logo}>
-        Next.js Blog
-      </Link>
-      <nav>
-        <ul className={styles.items + " " + font1.className}>
-          <li>
-            <Link href="/posts">Posts</Link>
-          </li>
-          <li>
-            <Link href="/contact">Contact</Link>
-          </li>
-        </ul>
-      </nav>
+      <div className={styles.container}>
+        <Link href="/" className={font0.className + " " + styles.logo}>
+          Next.js Blog
+        </Link>
+        <nav>
+          <ul className={styles.items + " " + font1.className}>
+            <li>
+              <Link href="/posts">Posts</Link>
+            </li>
+            <li>
+              <Link href="/contact">Contact</Link>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
   );
 };
