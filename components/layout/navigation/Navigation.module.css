@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: end;
   max-width: var(--max-width);
-  padding: var(--margin1);
+  padding: 1.3rem var(--margin1) 1.5rem var(--margin1);
   margin: 0 auto;
 }
 
