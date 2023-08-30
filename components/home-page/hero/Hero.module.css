@@ -7,7 +7,7 @@
   background: var(--background1);
   text-align: center;
   border-radius: .5em;
-  box-shadow: 3px 3px 5px 0px #0006;
+  box-shadow: var(--shadow1);
 }
 
 .image {
