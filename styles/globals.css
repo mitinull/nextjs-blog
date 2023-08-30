@@ -11,6 +11,8 @@
 
   --background0: #2a0b3d;
   --background1: #44318d;
+
+  --select-color: #d83f87;
 }
 
 * {
@@ -27,4 +29,9 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+::selection {
+  background-color: var(--select-color);
+  color: var(--foreground1);
 }
