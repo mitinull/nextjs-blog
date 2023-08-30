@@ -6,9 +6,9 @@
   align-items: center;
   background: var(--background1);
   text-align: center;
-  border-bottom-left-radius: 1.5em;
-  border-bottom-right-radius: 1.5em;
-  /* box-shadow: var(--shadow1); */
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+  box-shadow: var(--shadow1);
 }
 
 .image {
