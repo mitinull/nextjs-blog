@@ -15,6 +15,7 @@ export const Hero = () => {
           alt="mohammad"
           width={300}
           height={300}
+          priority
         />
       </div>
       <h2 className={styles.heading}>Hi, I'm Mohammad</h2>
