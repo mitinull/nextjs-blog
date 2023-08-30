@@ -1,8 +1,10 @@
 .container {
-  padding: .5em 3.5em 4em 3.5em;
+  /* border-top: 1px solid var(--selection-color); */
+  padding: 6em 3.2em;
+  padding-top: 1.5em;
   display: flex;
   flex-direction: column;
-  gap: 0.5em;
+  gap: 1.2em;
   align-items: center;
   background: var(--background1);
   text-align: center;
@@ -12,13 +14,13 @@
 }
 
 .image {
-  border-radius: 20%;
+  border-radius: 40%;
   overflow: hidden;
   width: 200px;
   height: 200px;
   display: block;
   margin-bottom: 1em;
-  outline: solid 2px var(--foreground2);
+  box-shadow: var(--shadow1);
 }
 
 .heading {
