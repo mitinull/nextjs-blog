@@ -13,6 +13,7 @@
 
 .logo {
   font-size: 1.7rem;
+  transition: all 0.4s;
 }
 
 @media (hover: hover) {
@@ -25,6 +26,10 @@
   list-style: none;
   display: flex;
   gap: 1rem;
+}
+
+.items li {
+  transition: all 0.4s;
 }
 
 @media (hover: hover) {
