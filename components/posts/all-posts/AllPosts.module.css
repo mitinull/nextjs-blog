@@ -1,0 +1,21 @@
+.section {
+  max-width: var(--max-width);
+  padding: 0 var(--margin1);
+  margin: 0 auto;
+}
+
+.section h1 {
+  font-size: 2.5rem;
+  margin-top: 3rem;
+  margin-bottom: 2.3rem;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .section h1 {
+    font-size: 2rem;
+    margin-top: 1.8rem;
+    margin-bottom: 1.2rem;
+  }
+
+}
