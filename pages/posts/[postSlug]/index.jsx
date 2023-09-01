@@ -21,7 +21,7 @@ export default function PostDetailPage(props) {
 
 export function getStaticProps(context) {
   const { postSlug } = context.params;
-  const post = readPost("cycling-on-earth.md");
+  const post = readPost(postSlug);
 
   return {
     props: { ...post },

@@ -11,3 +11,14 @@ Content is ipsum dolor\n\n consectetur adipisicing elit. Consequatur, ex. Ullam 
 ## Wow it's a title
 
 Consequatur, ex. Ullam repudiandae id alias nihil enim modi commodi, voluptatum iusto ipsum atque quae et debitis. Dolore laborum quasi ratione. The end.
+
+```js
+export function getStaticProps(context) {
+  const { postSlug } = context.params;
+  const post = readPost(postSlug);
+
+  return {
+    props: { ...post },
+  };
+}
+```
