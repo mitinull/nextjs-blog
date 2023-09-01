@@ -1,5 +1,5 @@
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { dark, vsDark, atomDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
+import { atomDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
 
 export const markdownCustomComponents = {
   p(p) {
