@@ -16,6 +16,28 @@ export const PostDetail = (props) => {
 
   const imagePath = `/images/posts/${slug}/${image}`;
 
+  const markdownCustomComponents = {
+    p(p) {
+      if (p.children[0].type === "img") {
+        const { alt, src } = p.children[0].props;
+        const imagePath = `/images/posts/${slug}/${src}`;
+        console.log(image);
+        return (
+          <div className={styles.image}>
+            <Image
+              alt={alt}
+              src={imagePath}
+              width={640}
+              height={380}
+            />
+          </div>
+        );
+      }
+
+      return <p>{p.children}</p>;
+    },
+  };
+
   return (
     <article className={styles.article + " " + font1.className}>
       <div className={styles.container}>
@@ -32,7 +54,11 @@ export const PostDetail = (props) => {
             />
           </div>
         </header>
-        <ReactMarkdown className={styles.content}>{content}</ReactMarkdown>
+        <ReactMarkdown
+          children={content}
+          className={styles.content}
+          components={markdownCustomComponents}
+        />
       </div>
     </article>
   );

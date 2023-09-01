@@ -1,7 +1,7 @@
 ---
-title: "Cycling on Earth"
-excerpt: "Cycling is one of my favorite hobbies. When I'm tired of mental work I usually go for a ride."
-image: "lying-in-park.jpg"
+title: "Building a Mouse-Following Character in JavaScript"
+excerpt: "We are going to build a character that looks at the mouse everywhere it goes!"
+image: "looking-guy-cover.jpg"
 date: "2023-9-1"
 isFeatured: true
 ---
@@ -11,7 +11,3 @@ Content is ipsum dolor\n\n consectetur adipisicing elit. Consequatur, ex. Ullam 
 ## Wow it's a title
 
 Consequatur, ex. Ullam repudiandae id alias nihil enim modi commodi, voluptatum iusto ipsum atque quae et debitis. Dolore laborum quasi ratione. The end.
-
-[this is a link to google](https://www.google.com)
-
-![Picture of Mitinull's bike in a rainy night](bike1.jpg)
