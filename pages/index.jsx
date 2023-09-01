@@ -2,10 +2,13 @@ import Head from "next/head";
 import { Inter } from "next/font/google";
 import { FeaturedPosts } from "@/components/home-page/featured-posts/FeaturedPosts";
 import { Hero } from "@/components/home-page/hero/Hero";
+import { readFeaturedPosts } from "@/utils/posts-utils/read-featured-posts";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function HomePage() {
+export default function HomePage(props) {
+  const { posts } = props;
+
   return (
     <>
       <Head>
@@ -22,8 +25,16 @@ export default function HomePage() {
       </Head>
       <main>
         <Hero />
-        <FeaturedPosts />
+        <FeaturedPosts posts={posts} />
       </main>
     </>
   );
+}
+
+export function getStaticProps() {
+  const posts = readFeaturedPosts();
+
+  return {
+    props: { posts },
+  };
 }

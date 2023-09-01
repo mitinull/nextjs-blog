@@ -1,9 +1,8 @@
 import { Lobster } from "next/font/google";
 import { PostsGrid } from "../posts-grid/PostsGrid";
-import styles from './AllPosts.module.css';
+import styles from "./AllPosts.module.css";
 
 const font0 = Lobster({ subsets: ["latin"], weight: "400" });
-
 
 export const AllPosts = (props) => {
   const { posts } = props;
