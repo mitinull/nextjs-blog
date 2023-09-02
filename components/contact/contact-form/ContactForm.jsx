@@ -1,6 +1,7 @@
 import { Inter, Lobster } from "next/font/google";
 import styles from "./ContactForm.module.css";
 import { useRef } from "react";
+import axios from "axios";
 
 const font0 = Lobster({ subsets: ["latin"], weight: "400" });
 const font1 = Inter({ subsets: ["latin"] });
@@ -10,13 +11,23 @@ export const ContactForm = () => {
   const emailInputRef = useRef(null);
   const messageInputRef = useRef(null);
 
-  const handleSubmit = (event) => {
+  const sendMessageHandler = async (event) => {
     event.preventDefault();
 
     const name = nameInputRef.current.value;
     const email = emailInputRef.current.value;
     const message = messageInputRef.current.value;
-    console.log({ name, email, message });
+
+    try {
+      const response = await axios.post("/api/contact", {
+        name,
+        email,
+        message,
+      });
+      alert(response.data)
+    } catch (err) {
+      alert(err.response.data)
+    }
   };
 
   return (
@@ -24,7 +35,7 @@ export const ContactForm = () => {
       <h1 className={font0.className}>
         Have something on your mind? Tell me!
       </h1>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={sendMessageHandler}>
         <label>
           <h3>Your Name</h3>
           <input ref={nameInputRef} type="text" required />
