@@ -24,9 +24,13 @@ export const ContactForm = () => {
         email,
         message,
       });
-      alert(response.data)
+      alert(response.data);
     } catch (err) {
-      alert(err.response.data)
+      if (err.response?.data) {
+        alert(err.response.data);
+      } else {
+        alert("Something went wrong!");
+      }
     }
   };
 
