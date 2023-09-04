@@ -1,4 +1,6 @@
-export default function handler(req, res) {
+import axios from "axios";
+
+export default async function handler(req, res) {
   if (req.method === "POST") {
     const { name, email, message } = req.body;
     console.log({ name, email, message });
@@ -13,6 +15,19 @@ export default function handler(req, res) {
       return res.status(422).json("Invalid Input.");
     }
 
-    return res.status(201).json("Message received successfully!");
+    try {
+      await axios.post(
+        process.env.SEND_EMAIL_API_URL,
+        {
+          name,
+          email,
+          message,
+        }
+      );
+      return res.status(201).json("Message received successfully!");
+    } catch (err) {
+      console.log(err);
+      return res.status(500).json("The message was not sent!");
+    }
   }
 }
