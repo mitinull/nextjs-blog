@@ -12,7 +12,7 @@ export default async function handler(req, res) {
       !message.trim() ||
       !email.includes("@")
     ) {
-      return res.status(422).json("Invalid Input.");
+      return res.status(422).json("Invalid Input!");
     }
 
     try {
@@ -27,6 +27,9 @@ export default async function handler(req, res) {
       return res.status(201).json("Message received successfully!");
     } catch (err) {
       console.log(err);
+      if (err?.response?.data?.error === 'Validation errors'){
+        return res.status(422).json("Invalid input!");
+      }
       return res.status(500).json("Message was not sent!");
     }
   }
