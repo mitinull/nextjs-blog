@@ -27,7 +27,7 @@ export default async function handler(req, res) {
       return res.status(201).json("Message received successfully!");
     } catch (err) {
       console.log(err);
-      return res.status(500).json("The message was not sent!");
+      return res.status(500).json("Message was not sent!");
     }
   }
 }
