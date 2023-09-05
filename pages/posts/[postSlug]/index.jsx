@@ -13,15 +13,13 @@ export default function PostDetailPage(props) {
         <title>{title}</title>
         <meta name="description" content={excerpt} />
       </Head>
-      <main>
-        <PostDetail
-          slug={slug}
-          title={title}
-          content={content}
-          image={image}
-          date={date}
-        />
-      </main>
+      <PostDetail
+        slug={slug}
+        title={title}
+        content={content}
+        image={image}
+        date={date}
+      />
     </>
   );
 }
