@@ -36,7 +36,7 @@ export const PostDetail = (props) => {
         <ReactMarkdown
           children={content}
           className={styles.content}
-          components={markdownCustomComponents}
+          components={markdownCustomComponents(slug)}
         />
       </div>
     </article>
