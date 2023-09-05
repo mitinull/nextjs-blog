@@ -1,6 +1,6 @@
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { atomDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
-import styles from './PostDetail.module.css';
+import styles from "./PostDetail.module.css";
 import Image from "next/image";
 
 export const markdownCustomComponents = (slug) => ({

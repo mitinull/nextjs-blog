@@ -16,18 +16,15 @@ export default async function handler(req, res) {
     }
 
     try {
-      await axios.post(
-        process.env.SEND_EMAIL_API_URL,
-        {
-          name,
-          email,
-          message,
-        }
-      );
+      await axios.post(process.env.SEND_EMAIL_API_URL, {
+        name,
+        email,
+        message,
+      });
       return res.status(201).json("Message received successfully!");
     } catch (err) {
       console.log(err);
-      if (err?.response?.data?.error === 'Validation errors'){
+      if (err?.response?.data?.error === "Validation errors") {
         return res.status(422).json("Invalid input!");
       }
       return res.status(500).json("Message was not sent!");

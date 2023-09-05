@@ -2,20 +2,27 @@ import { PostDetail } from "@/components/posts/post-detail/PostDetail";
 import { getAllPostsFilenames } from "@/utils/posts-utils/get-all-posts-filenames";
 import { readPost } from "@/utils/posts-utils/read-post";
 import { removeFilenameExtension } from "@/utils/posts-utils/remove-filename-extension";
+import Head from "next/head";
 
 export default function PostDetailPage(props) {
-  const { slug, title, content, image, date } = props;
+  const { slug, title, content, image, date, excerpt } = props;
 
   return (
-    <main>
-      <PostDetail
-        slug={slug}
-        title={title}
-        content={content}
-        image={image}
-        date={date}
-      />
-    </main>
+    <>
+      <Head>
+        <title>{title}</title>
+        <meta name="description" content={excerpt} />
+      </Head>
+      <main>
+        <PostDetail
+          slug={slug}
+          title={title}
+          content={content}
+          image={image}
+          date={date}
+        />
+      </main>
+    </>
   );
 }
 
