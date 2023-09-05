@@ -8,7 +8,6 @@ export const ContactFormWithTankYou = () => {
   const [showTankYou, setShowTankYou] = useState(false);
   return (
     <>
-      <ToastContainer theme="dark" position="bottom-right" />
       {!showTankYou ? (
         <ContactForm
           onSubmit={(...extra) =>
