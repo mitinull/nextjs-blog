@@ -33,11 +33,13 @@ export const PostDetail = (props) => {
             />
           </div>
         </header>
-        <ReactMarkdown
-          children={content}
-          className={styles.content}
-          components={markdownCustomComponents(slug)}
-        />
+        <div>
+          <ReactMarkdown
+            children={content}
+            className={styles.content}
+            components={markdownCustomComponents(slug)}
+          />
+        </div>
       </div>
     </article>
   );

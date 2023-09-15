@@ -22,8 +22,10 @@
   }
 }
 
+.article h3,
 .article h2 {
-  margin-bottom: .5em;
+  margin-top: 0.6em;
+  margin-bottom: 0.4em;
 }
 
 .article time {
@@ -53,4 +55,12 @@
   line-height: 1.5em;
   font-weight: 300;
   /* text-align: justify; */
+}
+
+.content img {
+  border-radius: 3px;
+  width: 100%;
+  height: auto;
+  margin: 0.65rem 0;
+  box-shadow: var(--shadow1);
 }

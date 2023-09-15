@@ -9,9 +9,7 @@ export const markdownCustomComponents = (slug) => ({
       const { alt, src } = p.children[0].props;
       const imagePath = `/images/posts/${slug}/${src}`;
       return (
-        <div className={styles.image}>
-          <Image alt={alt} src={imagePath} width={640} height={380} />
-        </div>
+        <Image alt={alt} src={imagePath} width={640} height={380} />
       );
     }
 

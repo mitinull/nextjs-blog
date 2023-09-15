@@ -6,11 +6,13 @@ date: "2023-9-1"
 isFeatured: true
 ---
 
-Content is ipsum dolor\n\n consectetur adipisicing elit. Consequatur, ex. Ullam repudiandae id alias nihil enim modi commodi, voluptatum iusto ipsum atque quae et debitis. Dolore laborum quasi ratione. The end.
+In this tutorial, we will create a character whose eyes follow the mouse cursor, giving the illusion that the character is actively tracking the cursor's movement. This effect is achieved by rotating the character's eyes in response to the position of the mouse.
 
-## Wow it's a title
+## Algorithm
 
-Consequatur, ex. Ullam repudiandae id alias nihil enim modi commodi, voluptatum iusto ipsum atque quae et debitis. Dolore laborum quasi ratione. The end.
+The most challenging aspect of this project lies in the algorithm. We will employ mathematical principles and trigonometry to calculate the precise degree of eye rotation needed to follow the cursor accurately.
+
+![Rotation of eye regarding to mouse cursor algorithm](algorithm-1.png)
 
 ```js
 export function getStaticProps(context) {
