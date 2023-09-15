@@ -30,14 +30,15 @@
 }
 
 .content h3 {
-  font-size: 1.55rem;
+  font-size: 1.3rem;
   font-weight: 600;
-  line-height: 2rem;
+  line-height: 1.6rem;
 }
 
 .content time {
   color: var(--foreground3);
-  margin-bottom: 8px;
+  margin-bottom: 6px;
+  margin-top: 8px;
   display: inline-block;
   font-size: 0.85em;
   font-weight: 300;
@@ -45,5 +46,5 @@
 
 .content p {
   color: var(--foreground2);
-  font-size: 0.9em;
+  font-size: .95em;
 }
