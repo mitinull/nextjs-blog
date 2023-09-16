@@ -64,3 +64,11 @@
   margin: 0.65rem 0;
   box-shadow: var(--shadow1);
 }
+
+.content p {
+  margin-bottom: .75rem;
+}
+
+.content a {
+  color: var(--selection-color);
+}

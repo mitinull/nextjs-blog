@@ -27,8 +27,8 @@ export const PostDetail = (props) => {
             <Image
               alt={title}
               src={imagePath}
-              width={640}
-              height={380}
+              width={1280}
+              height={760}
               priority
             />
           </div>
